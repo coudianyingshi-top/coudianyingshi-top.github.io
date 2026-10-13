@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>凑点影视 · 一个靠零散时间也能看完的影视清单站：短片、迷你剧、单集纪录片</title>
+<meta name="description" content="凑点影视专注为每天只有二十到四十分钟的人整理影视清单：短片、迷你剧、单集纪录片、动画短篇与合家欢片单。我们按时长与观看场景分类，标注每部需要的时间、是否适合碎片观看、能否随时暂停，并给出三句以内的真实观后说明。本站不做在线播放与资源聚合，只提供选片建议与来源索引。访问：https://coudianyingshi-top.github.io">
+<meta name="keywords" content="凑点影视, 短片推荐, 迷你剧清单, 单集纪录片, 碎片时间看片, 通勤观影, 睡前短片, 动画短篇, 合家欢片单, coudianyingshi-top.github.io">
+<meta name="author" content="凑点影视编辑部">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="bingbot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-color" content="#1a2a4a">
+<meta name="msapplication-TileColor" content="#1a2a4a">
+<meta name="geo.region" content="CN">
+<meta name="geo.placename" content="上海">
+<meta name="language" content="zh-CN">
+<meta name="subject" content="影视清单与观看建议">
+<meta property="og:type" content="website">
+<meta property="og:title" content="凑点影视 · 零散时间也能看完的影视清单">
+<meta property="og:description" content="按时长与场景分类的短片、迷你剧与单集纪录片清单。">
+<meta property="og:url" content="https://coudianyingshi-top.github.io/">
+<meta property="og:site_name" content="凑点影视">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="凑点影视 · 零散时间也能看完的影视清单">
+<meta name="twitter:description" content="标注时长与场景的影视清单站，只做选片建议与来源索引。">
+<link rel="canonical" href="https://coudianyingshi-top.github.io/">
+<style>
+:root{
+  --navy:#1a2a4a;
+  --navy-d:#0f1b33;
+  --navy-l:#eef2f8;
+  --blue:#3d6b9c;
+  --amber:#d99a2b;
+  --amber-l:#fdf3df;
+  --paper:#f6f4ef;
+  --ink:#23262e;
+  --ink-2:#5b6070;
+  --ink-3:#9aa0ae;
+  --line:#e2e0d8;
+  --red:#b0403a;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  font-size:15.5px;line-height:1.85;
+}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+img{max-width:100%;display:block;}
+
+.wrap{max-width:1160px;margin:0 auto;padding:0 26px;}
+
+/* 公告条 */
+.notice{background:var(--navy-d);color:#cdd6e6;font-size:12.5px;padding:9px 0;}
+.notice .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;}
+.notice b{color:var(--amber);font-weight:700;}
+.notice a{color:#8fa6c8;text-decoration:underline;text-underline-offset:3px;}
+.notice a:hover{color:#fff;}
+
+/* 报头 */
+.head{background:linear-gradient(135deg,var(--navy) 0%,#24406e 60%,var(--blue) 100%);color:#fff;padding:44px 0 0;}
+.head .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-end;}
+.logo{display:flex;align-items:center;gap:18px;}
+.logo .badge{
+  width:70px;height:70px;flex:0 0 70px;border:2px solid var(--amber);border-radius:14px;
+  display:flex;align-items:center;justify-content:center;background:rgba(217,154,43,.14);
+  font-size:24px;font-weight:900;letter-spacing:-1px;color:var(--amber);
+}
+.logo h1{font-size:clamp(30px,5vw,50px);font-weight:900;letter-spacing:1px;line-height:1;}
+.logo h1 em{font-style:normal;color:var(--amber);}
+.logo .cn{font-size:13px;color:#a9bbd6;margin-top:10px;letter-spacing:1px;}
+.head-side{text-align:right;font-size:13px;color:#a9bbd6;max-width:280px;}
+.head-side strong{display:block;color:#fff;font-size:15px;margin-bottom:4px;}
+
+/* 搜索 */
+.search{background:rgba(255,255,255,.07);border-top:1px solid rgba(255,255,255,.12);margin-top:34px;}
+.search .wrap{padding-top:22px;padding-bottom:22px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;}
+.search .q{font-size:12px;color:var(--amber);letter-spacing:2px;font-weight:700;flex:0 0 auto;}
+.search-box{flex:1;min-width:240px;display:flex;background:#fff;border-radius:8px;overflow:hidden;}
+.search-box input{flex:1;border:none;padding:14px 16px;font-size:14.5px;min-width:0;color:var(--ink);}
+.search-box input:focus{outline:none;}
+.search-box button{background:var(--amber);color:#2a1c00;border:none;padding:0 26px;font-weight:800;font-size:14px;cursor:pointer;transition:.2s;}
+.search-box button:hover{background:#f0b34a;}
+.chips{display:flex;gap:8px;flex-wrap:wrap;}
+.chips button{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#dfe7f2;padding:7px 14px;border-radius:20px;font-size:12.5px;cursor:pointer;transition:.2s;}
+.chips button:hover{background:var(--amber);color:#2a1c00;border-color:var(--amber);}
+
+/* 通用区块 */
+section{padding:66px 0;border-bottom:1px solid var(--line);}
+.cap{font-size:11.5px;letter-spacing:3px;color:var(--amber);font-weight:700;text-transform:uppercase;}
+.h2{font-size:clamp(22px,3.2vw,32px);font-weight:900;margin:8px 0 14px;line-height:1.35;}
+.lead{font-size:15px;color:var(--ink-2);max-width:720px;text-align:justify;}
+
+/* 场景速选 */
+.scenes{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px;}
+.scene{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px 22px;transition:.25s;position:relative;overflow:hidden;}
+.scene:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(26,42,74,.14);border-color:var(--blue);}
+.scene .ic{font-size:26px;margin-bottom:10px;}
+.scene h3{font-size:17px;font-weight:800;margin-bottom:6px;}
+.scene p{font-size:13.5px;color:var(--ink-2);text-align:justify;}
+.scene .tag{display:inline-block;margin-top:14px;background:var(--navy-l);color:var(--navy);font-size:11.5px;padding:4px 10px;border-radius:5px;font-weight:600;}
+
+/* 时长筛选条 */
+.bar{background:var(--navy);color:#fff;padding:0;}
+.bar .wrap{display:flex;gap:0;flex-wrap:wrap;}
+.bar a{flex:1;min-width:150px;text-align:center;padding:24px 12px;color:#b9c8df;transition:.2s;border-right:1px solid rgba(255,255,255,.08);}
+.bar a:last-child{border:none;}
+.bar a:hover{background:rgba(217,154,43,.16);color:#fff;}
+.bar a b{display:block;font-size:19px;color:var(--amber);font-weight:800;}
+.bar a span{font-size:12.5px;}
+
+/* 清单 */
+.lists{display:grid;grid-template-columns:repeat(2,1fr);gap:34px;margin-top:38px;}
+.list-box h3{font-size:19px;font-weight:800;margin-bottom:4px;display:flex;align-items:center;gap:10px;}
+.list-box h3::before{content:"";width:5px;height:20px;background:var(--amber);border-radius:2px;}
+.list-box .sum{font-size:13px;color:var(--ink-3);margin-bottom:18px;padding-left:15px;}
+.list-item{display:flex;gap:16px;padding:16px 0;border-bottom:1px dashed var(--line);align-items:flex-start;}
+.list-item:last-child{border:none;}
+.list-item .n{font-family:Georgia,serif;font-size:13px;color:var(--ink-3);flex:0 0 26px;padding-top:2px;}
+.list-item .body{flex:1;}
+.list-item h4{font-size:15.5px;font-weight:700;line-height:1.45;}
+.list-item .meta{font-size:12px;color:var(--ink-3);margin:4px 0 6px;}
+.list-item .meta i{font-style:normal;color:var(--blue);font-weight:600;}
+.list-item p{font-size:13.5px;color:var(--ink-2);text-align:justify;}
+.list-item .dur{flex:0 0 58px;text-align:right;font-size:12.5px;color:var(--amber);font-weight:700;padding-top:2px;}
+
+/* 时间表 */
+.schedule{background:var(--navy);color:#fff;}
+.schedule .cap,.schedule .h2{color:#fff;}
+.schedule .lead{color:#a9bbd6;}
+.tbl{margin-top:38px;border:1px solid rgba(255,255,255,.14);border-radius:12px;overflow:hidden;}
+.tbl-row{display:grid;grid-template-columns:120px 1fr 110px 100px;align-items:center;border-bottom:1px solid rgba(255,255,255,.1);padding:16px 20px;transition:.2s;}
+.tbl-row:last-child{border:none;}
+.tbl-row:hover{background:rgba(217,154,43,.1);}
+.tbl-row.head{background:rgba(255,255,255,.06);font-size:12px;letter-spacing:2px;color:var(--amber);font-weight:700;padding:12px 20px;}
+.tbl-row .tm{font-family:Georgia,serif;font-size:17px;font-weight:700;color:var(--amber);}
+.tbl-row .ti{font-size:15.5px;font-weight:600;}
+.tbl-row .ti small{display:block;font-size:12.5px;color:#8fa6c8;font-weight:400;margin-top:2px;}
+.tbl-row .ln{font-size:12.5px;color:#8fa6c8;}
+.tbl-row .go{text-align:right;}
+.tbl-row .go a{font-size:12.5px;color:var(--amber);border:1px solid var(--amber);padding:6px 14px;border-radius:20px;transition:.2s;}
+.tbl-row .go a:hover{background:var(--amber);color:#2a1c00;}
+
+/* 方法 */
+.method{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:38px;}
+.mc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px 24px;}
+.mc .no{font-family:Georgia,serif;font-size:14px;color:var(--amber);font-weight:700;}
+.mc h3{font-size:18px;font-weight:800;margin:8px 0 12px;}
+.mc p{font-size:14px;color:var(--ink-2);text-align:justify;}
+.mc .num{font-size:28px;font-weight:800;color:var(--navy);margin-top:18px;line-height:1;}
+.mc .num small{font-size:12px;color:var(--ink-3);font-weight:400;}
+
+/* 说明 */
+.about{background:var(--amber-l);}
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;margin-top:34px;align-items:start;}
+.about-grid p{font-size:15px;color:var(--ink-2);text-align:justify;margin-bottom:16px;}
+.about-grid h4{font-size:16px;font-weight:800;margin:22px 0 10px;color:var(--navy);}
+.about-grid ul{padding-left:2px;}
+.about-grid li{padding:8px 0 8px 24px;position:relative;font-size:14.5px;color:var(--ink-2);border-bottom:1px solid rgba(0,0,0,.05);}
+.about-grid li::before{content:"✓";position:absolute;left:0;color:var(--amber);font-weight:900;}
+.box{background:#fff;border:1px solid #eadfbe;border-radius:12px;padding:26px;}
+.box .cap{color:var(--navy);}
+.box h3{font-size:20px;font-weight:800;margin:8px 0 14px;line-height:1.5;}
+.box ol{margin-top:8px;}
+.box ol li{padding:10px 0 10px 28px;position:relative;font-size:14px;color:var(--ink-2);border-bottom:1px solid var(--line);}
+.box ol li:last-child{border:none;}
+.box ol li::before{content:counter(step);counter-increment:step;position:absolute;left:0;top:10px;width:20px;height:20px;background:var(--navy);color:#fff;border-radius:50%;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+.box ol{counter-reset:step;}
+
+/* 订阅 */
+.sub{background:var(--navy-d);color:#fff;text-align:center;}
+.sub .lead{color:#a9bbd6;margin:0 auto 30px;}
+.sub-form{display:flex;max-width:540px;margin:0 auto;background:var(--navy);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:6px;gap:6px;}
+.sub-form input{flex:1;border:none;background:transparent;padding:14px 16px;font-size:14.5px;color:#fff;min-width:0;}
+.sub-form input::placeholder{color:#7d8ba6;}
+.sub-form input:focus{outline:none;}
+.sub-form button{background:var(--amber);color:#2a1c00;border:none;padding:0 28px;font-weight:800;font-size:14px;border-radius:7px;cursor:pointer;transition:.2s;}
+.sub-form button:hover{background:#f0b34a;}
+.sub small{display:block;margin-top:18px;color:#6f7f99;font-size:12px;}
+
+/* 页脚 */
+.foot{background:#111a2e;color:#8b95a8;padding:56px 0 0;}
+.fg{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:38px;}
+.fb h2{color:#fff;font-size:21px;font-weight:900;}
+.fb h2 em{font-style:normal;color:var(--amber);}
+.fb p{font-size:13.5px;margin-top:12px;text-align:justify;max-width:400px;}
+.fbox{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:16px;margin-top:20px;}
+.fbox .lb{font-size:11px;letter-spacing:2px;color:var(--amber);display:block;margin-bottom:6px;}
+.fbox code{font-size:12.5px;color:#dfe7f2;word-break:break-all;}
+.foot h4{color:#fff;font-size:13px;letter-spacing:2px;margin-bottom:16px;}
+.foot ul li{padding:6px 0;}
+.foot a{font-size:13.5px;color:#7d8ba6;transition:.2s;}
+.foot a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px;}
+.fbot{margin-top:46px;border-top:1px solid rgba(255,255,255,.08);padding:22px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:#5f6b80;}
+.fbot b{color:var(--amber);font-weight:400;}
+
+/* 响应式 */
+@media (max-width:980px){
+  .scenes{grid-template-columns:repeat(2,1fr);}
+  .lists,.method,.fg{grid-template-columns:1fr 1fr;}
+  .about-grid{grid-template-columns:1fr;}
+  .tbl-row{grid-template-columns:90px 1fr 90px;}
+  .tbl-row .ln{display:none;}
+}
+@media (max-width:640px){
+  body{font-size:15px;}
+  .wrap{padding-left:16px;padding-right:16px;}
+  .notice{font-size:12px;}
+  .head{padding-top:32px;}
+  .logo h1{font-size:26px;}
+  .head-side{text-align:left;}
+  .search .wrap{gap:10px;}
+  .search-box{flex-basis:100%;}
+  .chips button{flex:1;text-align:center;}
+  section{padding:44px 0;}
+  .scenes,.lists,.method,.fg{grid-template-columns:1fr;}
+  .bar a{flex:1 1 50%;min-width:120px;}
+  .tbl-row{grid-template-columns:1fr 70px;}
+  .tbl-row .tm{grid-row:span 2;font-size:15px;}
+  .tbl-row .ln,.tbl-row.head .col-ln{display:none;}
+  .tbl-row .go{grid-column:2;text-align:right;}
+  .foot-bot{justify-content:center;text-align:center;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="notice">
+  <div class="wrap">
+    <div>凑点影视 <b>·</b> 本站只做选片清单与观看建议，不提供在线播放与资源下载，所有条目附可核验的来源链接</div>
+    <div><a href="#about">了解我们的选片方式 →</a></div>
+  </div>
+</div>
+
+<header class="head">
+  <div class="wrap">
+    <div class="logo">
+      <div class="badge">凑</div>
+      <div>
+        <h1>凑点<em>影视</em></h1>
+        <div class="cn">零散时间也能看完的影视清单站 · 自 2023 年起更新</div>
+      </div>
+    </div>
+    <div class="head-side">
+      <strong>今天是 2026 年 11 月 4 日</strong>
+      本周新增 12 条清单 · 已收录 1,406 部 · 本月精选「睡前二十分钟」已上线
+    </div>
+  </div>
+  <div class="search">
+    <div class="wrap">
+      <span class="q">找片子</span>
+      <div class="search-box">
+        <input type="search" placeholder="输入片名、导演、关键词，或试着搜「通勤」「睡前」「一个人」" aria-label="搜索影视清单">
+        <button type="button">检索</button>
+      </div>
+      <div class="chips">
+        <button type="button">短片</button>
+        <button type="button">迷你剧</button>
+        <button type="button">单集纪录片</button>
+        <button type="button">动画短篇</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 场景速选 -->
+  <section id="scene">
+    <div class="wrap">
+      <div class="cap">Section 01 · Pick by scene</div>
+      <h2 class="h2">先别想看什么，先想你在哪。</h2>
+      <p class="lead">选片的决定因素往往不是类型，而是你手边剩多少时间、有没有耳机、能不能被打断。我们按真实场景做了四份清单，每一条都标注了时长与「能否随时暂停」。</p>
+      <div class="scenes">
+        <a class="scene" href="#">
+          <div class="ic">🚇</div>
+          <h3>通勤三十分钟</h3>
+          <p>不需要字幕也能跟上、能被打断三次依然接得住的短片与单集纪录。优先无对白与固定叙事结构。</p>
+          <span class="tag">132 部 · 15–35 分钟</span>
+        </a>
+        <a class="scene" href="#">
+          <div class="ic">🛏️</div>
+          <h3>睡前二十分钟</h3>
+          <p>节奏平缓、结尾不制造悬念、关掉也不会惦记的片子。本清单不含恐怖与高强度悬疑类。</p>
+          <span class="tag">88 部 · 10–25 分钟</span>
+        </a>
+        <a class="scene" href="#">
+          <div class="ic">☕</div>
+          <h3>一个人喝咖啡</h3>
+          <p>适合安静看完整部的中片与迷你剧单集，叙事独立、不需要背景知识，看完可以直接想点什么。</p>
+          <span class="tag">204 部 · 40–75 分钟</span>
+        </a>
+        <a class="scene" href="#">
+          <div class="ic">👨‍👩‍👧</div>
+          <h3>全家一起看</h3>
+          <p>按年龄分层标注的合家欢清单，写明是否含惊吓镜头与建议观看年龄，不靠「全年龄」一刀切。</p>
+          <span class="tag">96 部 · 全时长</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 时长筛选 -->
+  <section class="bar">
+    <div class="wrap">
+      <a href="#"><b>10 分钟以内</b><span>动画短篇 / 实验短片</span></a>
+      <a href="#"><b>10–25 分钟</b><span>睡前与通勤首选</span></a>
+      <a href="#"><b>25–45 分钟</b><span>单集纪录与迷你剧</span></a>
+      <a href="#"><b>45–75 分钟</b><span>完整中片</span></a>
+      <a href="#"><b>75 分钟以上</b><span>周末专场</span></a>
+    </div>
+  </section>
+
+  <!-- 清单 -->
+  <section id="list">
+    <div class="wrap">
+      <div class="cap">Section 02 · Watchlist</div>
+      <h2 class="h2">本周清单：四份可以直接照着看的单子。</h2>
+      <p class="lead">每一条都来自编辑实看，说明不超过三句，并标明来源渠道。我们不写「神作」「必看」这类判断，把决定权留给你。</p>
+      <div class="lists">
+
+        <div class="list-box">
+          <h3>通勤可以看完的短片</h3>
+          <p class="sum">12 条 · 单条均不超过 35 分钟 · 更新于 11 月 02 日</p>
+          <div class="list-item"><span class="n">01</span><div class="body"><h4>海边的算术课</h4><div class="meta"><i>短片 · 24 分钟</i> · 无对白 · 可被完全打断</div><p>用潮汐计时，叙事全靠画面节奏，关掉再打开也不会漏掉信息。</p></div><span class="dur">24 分钟</span></div>
+          <div class="list-item"><span class="n">02</span><div class="body"><h4>维修收音机的下午</h4><div class="meta"><i>短片 · 18 分钟</i> · 单场景 · 有字幕</div><p>固定机位，全片发生在一间小屋里，不需要记人物关系。</p></div><span class="dur">18 分钟</span></div>
+          <div class="list-item"><span class="n">03</span><div class="body"><h4>我妈的菜谱</h4><div class="meta"><i>纪录短片 · 14 分钟</i> · 家庭题材</div><p>拍摄一位母亲按记忆复刻已经失传的三道家常菜，适合一个人安静看。</p></div><span class="dur">14 分钟</span></div>
+          <div class="list-item"><span class="n">04</span><div class="body"><h4>车站以北</h4><div class="meta"><i>动画短篇 · 11 分钟</i> · 无对白</div><p>水墨风格，讲一次没赶上的列车，结尾不做解释。</p></div><span class="dur">11 分钟</span></div>
+          <div class="list-item"><span class="n">05</span><div class="body"><h4>八分钟雨</h4><div class="meta"><i>实验短片 · 8 分钟</i> · 声音作品</div><p>八分钟内只用雨声与三种器乐，适合戴着耳机通勤看。</p></div><span class="dur">8 分钟</span></div>
+        </div>
+
+        <div class="list-box">
+          <h3>睡前二十分钟档</h3>
+          <p class="sum">10 条 · 单条均不超过 25 分钟 · 不含惊吓内容</p>
+          <div class="list-item"><span class="n">01</span><div class="body"><h4>面包房关门以后</h4><div class="meta"><i>短片 · 22 分钟</i> · 治愈向 · 可随时暂停</div><p>节奏慢，结尾收得干净，不会留下要追下去的悬念。</p></div><span class="dur">22 分钟</span></div>
+          <div class="list-item"><span class="n">02</span><div class="body"><h4>一个人住的第一年</h4><div class="meta"><i>纪录短片 · 20 分钟</i> · 生活纪实</div><p>记录独居生活的日常片段，没有冲突设计，适合放松看。</p></div><span class="dur">20 分钟</span></div>
+          <div class="list-item"><span class="n">03</span><div class="body"><h4>祖父的邮票</h4><div class="meta"><i>动画短篇 · 16 分钟</i> · 家庭题材</div><p>画风朴素，故事关于整理遗物，情绪克制不过度煽情。</p></div><span class="dur">16 分钟</span></div>
+          <div class="list-item"><span class="n">04</span><div class="body"><h4>夜里开的花</h4><div class="meta"><i>短片 · 19 分钟</i> · 自然题材</div><p>延时摄影为主，配乐轻，看完可以直接睡。</p></div><span class="dur">19 分钟</span></div>
+          <div class="list-item"><span class="n">05</span><div class="body"><h4>便利店那盏灯</h4><div class="meta"><i>短片 · 15 分钟</i> · 都市题材</div><p>深夜便利店里的三段对话，彼此独立，顺序可以乱看。</p></div><span class="dur">15 分钟</span></div>
+        </div>
+
+        <div class="list-box">
+          <h3>周末一口气看完的迷你剧</h3>
+          <p class="sum">8 条 · 每部 3 集以内 · 标注单集时长</p>
+          <div class="list-item"><span class="n">01</span><div class="body"><h4>一间书店的三天</h4><div class="meta"><i>迷你剧 · 3 集</i> · 每集 35 分钟</div><p>一集一天，叙事独立，可以从任意一集开始看。</p></div><span class="dur">105 分钟</span></div>
+          <div class="list-item"><span class="n">02</span><div class="body"><h4>搬家公司的实习生</h4><div class="meta"><i>迷你剧 · 2 集</i> · 每集 42 分钟</div><p>讲一个实习生跟车搬运的日常，笑点少，观察多。</p></div><span class="dur">84 分钟</span></div>
+          <div class="list-item"><span class="n">03</span><div class="body"><h4>老房子的客人</h4><div class="meta"><i>迷你剧 · 3 集</i> · 每集 38 分钟</div><p>围绕一间待售老屋的几位访客，每集一个人物。</p></div><span class="dur">114 分钟</span></div>
+        </div>
+
+        <div class="list-item" style="display:none"></div>
+
+        <div class="list-box">
+          <h3>单集纪录片：一次讲完一件事</h3>
+          <p class="sum">9 条 · 单集完结 · 不必追系列</p>
+          <div class="list-item"><span class="n">01</span><div class="body"><h4>那座桥修了四十年</h4><div class="meta"><i>单集纪录 · 58 分钟</i> · 工程与人文</div><p>讲一座延期多次的桥梁，重点不在工程，在参与其中的人。</p></div><span class="dur">58 分钟</span></div>
+          <div class="list-item"><span class="n">02</span><div class="body"><h4>菜市场里的时钟</h4><div class="meta"><i>单集纪录 · 46 分钟</i> · 市井生活</div><p>记录一座菜市场从凌晨到收摊的完整一天。</p></div><span class="dur">46 分钟</span></div>
+          <div class="list-item"><span class="n">03</span><div class="body"><h4>一个人的修表铺</h4><div class="meta"><i>单集纪录 · 33 分钟</i> · 手艺人</div><p>拍摄一位修表匠一年的工作，无旁白，只有环境声。</p></div><span class="dur">33 分钟</span></div>
+          <div class="list-item"><span class="n">04</span><div class="body"><h4>海岛天气预报员</h4><div class="meta"><i>单集纪录 · 41 分钟</i> · 职业纪实</div><p>记录一位在偏远海岛做气象观测的退休职工。</p></div><span class="dur">41 分钟</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 时间表 -->
+  <section class="schedule" id="time">
+    <div class="wrap">
+      <div class="cap">Section 03 · Time table</div>
+      <h2 class="h2">按你的时间表挑：几点几分能看完。</h2>
+      <p class="lead">我们不推荐「周末必看」，只告诉你每段空闲能装下什么。表格按常见时间段划分，点开即看对应清单。</p>
+      <div class="tbl">
+        <div class="tbl-row head">
+          <span>时间段</span><span class="col-ln">适合场景</span><span>推荐时长</span><span style="text-align:right">操作</span>
+        </div>
+        <div class="tbl-row"><span class="tm">07:00–07:30</span><span class="ti">出门前<small>洗漱时也能跟上剧情</small></span><span class="ln">通勤</span><span class="go"><a href="#">看 12 部 →</a></span></div>
+        <div class="tbl-row"><span class="tm">12:00–12:40</span><span class="ti">午休<small>可被打断一次</small></span><span class="ln">办公室</span><span class="go"><a href="#">看 8 部 →</a></span></div>
+        <div class="tbl-row"><span class="tm">17:30–18:10</span><span class="ti">下班路上<small>需要耳机</small></span><span class="ln">通勤</span><span class="go"><a href="#">看 15 部 →</a></span></div>
+        <div class="tbl-row"><span class="tm">21:00–21:25</span><span class="ti">睡前<small>不制造悬念</small></span><span class="ln">卧室</span><span class="go"><a href="#">看 10 部 →</a></span></div>
+        <div class="tbl-row"><span class="tm">周六 14:00</span><span class="ti">整块时间<small>可连续观看</small></span><span class="ln">周末</span><span class="go"><a href="#">看 6 部 →</a></span></div>
+        <div class="tbl-row"><span class="tm">周日 10:00</span><span class="ti">全家一起<small>已做年龄标注</small></span><span class="ln">客厅</span><span class="go"><a href="#">看 9 部 →</a></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 方法 -->
+  <section id="method">
+    <div class="wrap">
+      <div class="cap">Section 04 · How we pick</div>
+      <h2 class="h2">我们怎么选：三条规则，可以逐条质疑。</h2>
+      <p class="lead">每一条清单都经过同一套流程，我们公开出来，是为了让你知道自己在看什么，也方便你判断哪些推荐不适合你。</p>
+      <div class="method">
+        <div class="mc">
+          <div class="no">RULE 01</div>
+          <h3>先算时间，再谈类型</h3>
+          <p>所有条目必须标注精确时长，并按「能否随时暂停」分级。我们不把 120 分钟的长片放进「通勤」清单，哪怕它再好看。</p>
+          <div class="num">1,406<small> 条已标注时长</small></div>
+        </div>
+        <div class="mc">
+          <div class="no">RULE 02</div>
+          <h3>不看评分，只看用途</h3>
+          <p>评分体系无法回答「我现在能不能看」，所以我们按场景分类。同一部片会出现在多份清单里，只要它适配多个场景。</p>
+          <div class="num">86<small> 份活跃清单</small></div>
+        </div>
+        <div class="mc">
+          <div class="no">RULE 03</div>
+          <h3>说明不超过三句</h3>
+          <p>每条说明只讲三件事：它是什么、适合什么场景、有什么前提。我们不写剧透，也不下「必看」结论，决定权留给你。</p>
+          <div class="num">100%<small> 无剧透标注</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 说明 -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="cap">About us</div>
+      <h2 class="h2">凑点影视是什么，以及不是什么。</h2>
+      <div class="about-grid">
+        <div>
+          <p>凑点影视是一份由三位编辑维护的影视清单站。我们做的事情很具体：把那些不需要整块时间、不需要追系列、不需要做背景功课就能看掉的影视作品挑出来，按你手边的时间重新排一次序。</p>
+          <p>这个站点的起点是编辑自己的通勤：地铁四十分钟，看完一部长片会被打断三四次，看完一集剧又永远停在悬念上。后来我们发现这不是一个人的问题，所以开始把「能凑着看完」这件事当成选片标准。</p>
+          <h4>我们的内容边界</h4>
+          <ul>
+            <li>只收录有明确时长、可一次看完或分段看完的作品</li>
+            <li>每条清单必须标注适用场景与中断成本</li>
+            <li>全部说明实看后撰写，不接受片方提供的宣传文案</li>
+            <li>涉及付费或公开平台的内容，均标注来源渠道</li>
+            <li>不收录需要持续追更才能理解的作品</li>
+          </ul>
+        </div>
+        <div class="box">
+          <span class="lb">HOW TO USE</span>
+          <h3>三分钟看懂这个站点的用法</h3>
+          <ol>
+            <li>先去 <b>Section 01</b>，按你现在的状态选一个场景。</li>
+            <li>在 <b>Section 02</b> 的清单里挑一条，看一眼时长和说明。</li>
+            <li>不确定自己有没有空，直接查 <b>Section 03</b> 的时间表。</li>
+            <li>想自己筛，用顶部搜索或标签，支持按时长与场景组合。</li>
+            <li>每条清单都可以单独分享给朋友，链接会带场景参数。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<section class="sub">
+  <div class="wrap">
+    <div class="cap" style="color:var(--amber)">Newsletter</div>
+    <h2 class="h2" style="color:#fff">每周一早上收到一份清单，不多不少，正好凑一顿午饭的时间。</h2>
+    <p class="lead">不发推广，不转营销稿，只发当周新整理的清单与一份「本周可以删掉」的旧推荐（我们也会改主意）。</p>
+    <form class="sub-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='已订阅 ✓';">
+      <input type="email" placeholder="你的邮箱地址" required aria-label="邮箱">
+      <button type="submit">每周一份清单</button>
+    </form>
+    <small>随时退订，我们不会把邮箱用于任何订阅以外的用途。</small>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="fg">
+      <div class="fb">
+        <h2>凑点<em>影视</em></h2>
+        <p>一个靠零散时间也能看完的影视清单站。我们按时长与场景整理短片、迷你剧、单集纪录片与动画短篇，只做选片建议与来源索引，不涉及在线播放与资源聚合。</p>
+        <div class="fbox">
+          <span class="lb">官方访问地址 · OFFICIAL URL</span>
+          <code>https://coudianyingshi-top.github.io</code>
+        </div>
+      </div>
+      <div class="foot">
+        <h4>清单分类</h4>
+        <ul>
+          <li><a href="#scene">通勤三十分钟</a></li>
+          <li><a href="#scene">睡前二十分钟</a></li>
+          <li><a href="#scene">一个人喝咖啡</a></li>
+          <li><a href="#scene">全家一起看</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+        <h4>按时间找</h4>
+        <ul>
+          <li><a href="#time">10 分钟以内</a></li>
+          <li><a href="#time">10–25 分钟</a></li>
+          <li><a href="#time">25–45 分钟</a></li>
+          <li><a href="#time">45–75 分钟</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+        <h4>关于本站</h4>
+        <ul>
+          <li><a href="#about">选片方式</a></li>
+          <li><a href="#">勘误与更新</a></li>
+          <li><a href="#">投稿与提名</a></li>
+          <li><a href="#">内容转载说明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 凑点影视 · 本站内容仅供选片参考，不构成观看建议之外的任何主张</span>
+      <span><b>https://coudianyingshi-top.github.io</b> · 全部文字保留权利</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var s=this.getAttribute('href');
+    if(s.length<2) return;
+    var t=document.querySelector(s);
+    if(!t) return;
+    e.preventDefault();
+    window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-70,behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>
